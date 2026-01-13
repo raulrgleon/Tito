@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001 /* TitoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002 /* TitoApp.swift */; };
+		A1000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004 /* ContentView.swift */; };
+		A1000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000006 /* Assets.xcassets */; };
+		A1000007 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000008 /* Preview Assets.xcassets */; };
+		3E9F605EC0844CD992E2F2E2 /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D251B835A4F4AB16A5E3E /* Preset.swift */; };
+		60EF417132E24B1EA9860D07 /* StreamConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3B62B141B4531BE78C345 /* StreamConfig.swift */; };
+		8C5ED8DDAE954631B0404E09 /* StreamState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283270A9137C4D9EBFB7B38B /* StreamState.swift */; };
+		B6F66DE8FDEB4F67A3B28796 /* Telemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736500D174349398F15B1D2 /* Telemetry.swift */; };
+		CE36479D6EA04718A2D37933 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346E768D989544BBBB42FE33 /* AudioService.swift */; };
+		E87395FCAB8E496EB7CF7AF9 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AEEDFC1E7F448FA9472EED /* CameraService.swift */; };
+		2BEFFF91025549EFA9C28AA2 /* EncoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B89C3542D471BB985A26F /* EncoderService.swift */; };
+		56572B9FC60D47249CEAC40D /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54BA2D43444F6BB28E1423 /* KeychainService.swift */; };
+		0271E12DCB594BAD9411EB89 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A75607252AA4C08A205650D /* NetworkMonitor.swift */; };
+		DC29D8F201DC45CD9F2E392A /* RTMPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD28062A7DEF453FAF869F7E /* RTMPService.swift */; };
+		F73401D0BDC14469A70FD3CE /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7C2AB845A4493A8340DA6 /* OnboardingViewModel.swift */; };
+		A4CC5E2CA89D4F6B90E7D9CC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09908B6E7E4691821943F5 /* SettingsViewModel.swift */; };
+		5F697997A3494C45B7CEE00E /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F989E3CF94074007902E92FE /* StreamViewModel.swift */; };
+		F5CC91A88C0E40CB8FC4D087 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB179FB8B21541B2B0831240 /* ConnectView.swift */; };
+		EB8EB3DE70184816A27E1610 /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA9A1815269443E8A5ECAB3 /* DiagnosticsView.swift */; };
+		6A44181F587344B981488ACC /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A525960CEA462D837D4535 /* EndView.swift */; };
+		75F19411AA20472BA8A76845 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEEBF26C15B458B98141C59 /* LiveView.swift */; };
+		95B4B0CFC8D6427D87EEB018 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3306A4164B429BAB370A2F /* OnboardingView.swift */; };
+		0976E0904C674BED9483E2E8 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBCF2DB87B4E339683FE31 /* PreviewView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1000000 /* Tito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000002 /* TitoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitoApp.swift; sourceTree = "<group>"; };
+		A1000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000008 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1000009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51D251B835A4F4AB16A5E3E /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preset.swift"; sourceTree = "<group>"; };
+		8EC3B62B141B4531BE78C345 /* StreamConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreamConfig.swift"; sourceTree = "<group>"; };
+		283270A9137C4D9EBFB7B38B /* StreamState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreamState.swift"; sourceTree = "<group>"; };
+		8736500D174349398F15B1D2 /* Telemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Telemetry.swift"; sourceTree = "<group>"; };
+		346E768D989544BBBB42FE33 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioService.swift"; sourceTree = "<group>"; };
+		C7AEEDFC1E7F448FA9472EED /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraService.swift"; sourceTree = "<group>"; };
+		D02B89C3542D471BB985A26F /* EncoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EncoderService.swift"; sourceTree = "<group>"; };
+		FB54BA2D43444F6BB28E1423 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainService.swift"; sourceTree = "<group>"; };
+		3A75607252AA4C08A205650D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMonitor.swift"; sourceTree = "<group>"; };
+		DD28062A7DEF453FAF869F7E /* RTMPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RTMPService.swift"; sourceTree = "<group>"; };
+		CED7C2AB845A4493A8340DA6 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingViewModel.swift"; sourceTree = "<group>"; };
+		CD09908B6E7E4691821943F5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewModel.swift"; sourceTree = "<group>"; };
+		F989E3CF94074007902E92FE /* StreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreamViewModel.swift"; sourceTree = "<group>"; };
+		AB179FB8B21541B2B0831240 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConnectView.swift"; sourceTree = "<group>"; };
+		FEA9A1815269443E8A5ECAB3 /* DiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiagnosticsView.swift"; sourceTree = "<group>"; };
+		70A525960CEA462D837D4535 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndView.swift"; sourceTree = "<group>"; };
+		ECEEBF26C15B458B98141C59 /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LiveView.swift"; sourceTree = "<group>"; };
+		AB3306A4164B429BAB370A2F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingView.swift"; sourceTree = "<group>"; };
+		EECBCF2DB87B4E339683FE31 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewView.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A100000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+							A39E23A983124F829CA93B46 /* HaishinKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A100000B = {
+			isa = PBXGroup;
+			children = (
+				A100000C /* Tito */,
+				A100000D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A100000C /* Tito */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002 /* TitoApp.swift */,
+				A1000004 /* ContentView.swift */,
+				D651DB08F7F94072BA03BD91 /* Models */,
+				6FFDEA36124949F3A4697AF8 /* Services */,
+				652FBABF9CE64CC6990AF228 /* ViewModels */,
+				096A4F044A16479EA436B423 /* Views */,
+				A1000006 /* Assets.xcassets */,
+				A1000009 /* Info.plist */,
+				A100000E /* Preview Content */,
+			);
+			path = Tito;
+			sourceTree = "<group>";
+		};
+		A100000D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000 /* Tito.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A100000E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1000008 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+
+		D651DB08F7F94072BA03BD91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B51D251B835A4F4AB16A5E3E /* Preset.swift */,
+				8EC3B62B141B4531BE78C345 /* StreamConfig.swift */,
+				283270A9137C4D9EBFB7B38B /* StreamState.swift */,
+				8736500D174349398F15B1D2 /* Telemetry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6FFDEA36124949F3A4697AF8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				346E768D989544BBBB42FE33 /* AudioService.swift */,
+				C7AEEDFC1E7F448FA9472EED /* CameraService.swift */,
+				D02B89C3542D471BB985A26F /* EncoderService.swift */,
+				FB54BA2D43444F6BB28E1423 /* KeychainService.swift */,
+				3A75607252AA4C08A205650D /* NetworkMonitor.swift */,
+				DD28062A7DEF453FAF869F7E /* RTMPService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		652FBABF9CE64CC6990AF228 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CED7C2AB845A4493A8340DA6 /* OnboardingViewModel.swift */,
+				CD09908B6E7E4691821943F5 /* SettingsViewModel.swift */,
+				F989E3CF94074007902E92FE /* StreamViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		096A4F044A16479EA436B423 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB179FB8B21541B2B0831240 /* ConnectView.swift */,
+				FEA9A1815269443E8A5ECAB3 /* DiagnosticsView.swift */,
+				70A525960CEA462D837D4535 /* EndView.swift */,
+				ECEEBF26C15B458B98141C59 /* LiveView.swift */,
+				AB3306A4164B429BAB370A2F /* OnboardingView.swift */,
+				EECBCF2DB87B4E339683FE31 /* PreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A100000F /* Tito */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000010 /* Build configuration list for PBXNativeTarget "Tito" */;
+			buildPhases = (
+				A1000011 /* Sources */,
+				A100000A /* Frameworks */,
+				A1000012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			packageProductDependencies = (
+				AEDB6F33B51F4183BDF079BA /* HaishinKit */,
+			);
+			name = Tito;
+			productName = Tito;
+			productReference = A1000000 /* Tito.app */;
+			productType = "com.apple.product-type.application";
+		};
+
+		AEDB6F33B51F4183BDF079BA /* HaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDEB991418354A52B6D0C431 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */;
+			productName = HaishinKit;
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = A1000014 /* Build configuration list for PBXProject "Tito" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A100000B;
+			packageReferences = (
+				DDEB991418354A52B6D0C431 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */,
+			);
+			productRefGroup = A100000D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A100000F /* Tito */,
+			);
+		};
+
+		DDEB991418354A52B6D0C431 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shogo4405/HaishinKit.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000007 /* Preview Assets.xcassets in Resources */,
+				A1000005 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001 /* TitoApp.swift in Sources */,
+				A1000003 /* ContentView.swift in Sources */,
+				3E9F605EC0844CD992E2F2E2 /* Preset.swift in Sources */,
+				60EF417132E24B1EA9860D07 /* StreamConfig.swift in Sources */,
+				8C5ED8DDAE954631B0404E09 /* StreamState.swift in Sources */,
+				B6F66DE8FDEB4F67A3B28796 /* Telemetry.swift in Sources */,
+				CE36479D6EA04718A2D37933 /* AudioService.swift in Sources */,
+				E87395FCAB8E496EB7CF7AF9 /* CameraService.swift in Sources */,
+				2BEFFF91025549EFA9C28AA2 /* EncoderService.swift in Sources */,
+				56572B9FC60D47249CEAC40D /* KeychainService.swift in Sources */,
+				0271E12DCB594BAD9411EB89 /* NetworkMonitor.swift in Sources */,
+				DC29D8F201DC45CD9F2E392A /* RTMPService.swift in Sources */,
+				F73401D0BDC14469A70FD3CE /* OnboardingViewModel.swift in Sources */,
+				A4CC5E2CA89D4F6B90E7D9CC /* SettingsViewModel.swift in Sources */,
+				5F697997A3494C45B7CEE00E /* StreamViewModel.swift in Sources */,
+				F5CC91A88C0E40CB8FC4D087 /* ConnectView.swift in Sources */,
+				EB8EB3DE70184816A27E1610 /* DiagnosticsView.swift in Sources */,
+				6A44181F587344B981488ACC /* EndView.swift in Sources */,
+				75F19411AA20472BA8A76845 /* LiveView.swift in Sources */,
+				95B4B0CFC8D6427D87EEB018 /* OnboardingView.swift in Sources */,
+				0976E0904C674BED9483E2E8 /* PreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1000015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1000016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1000017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tito/Preview Content\"";
+				DEVELOPMENT_TEAM = CNU4S77L2K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tito/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tito necesita acceso a la cámara para transmitir video en vivo.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Tito necesita acceso al micrófono para transmitir audio en vivo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.garcia.tito.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1000018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tito/Preview Content\"";
+				DEVELOPMENT_TEAM = CNU4S77L2K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tito/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tito necesita acceso a la cámara para transmitir video en vivo.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Tito necesita acceso al micrófono para transmitir audio en vivo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.garcia.tito.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000010 /* Build configuration list for PBXNativeTarget "Tito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000017 /* Debug */,
+				A1000018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000014 /* Build configuration list for PBXProject "Tito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000015 /* Debug */,
+				A1000016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1000013 /* Project object */;
+}
