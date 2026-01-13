@@ -5,6 +5,7 @@ import HaishinKit
 struct PreviewView: View {
     @StateObject private var viewModel = StreamViewModel()
     @State private var versionTapCount = 0
+    @State private var showSettings = false
     
     private var statusColor: Color {
         switch viewModel.streamState {
@@ -85,6 +86,18 @@ struct PreviewView: View {
                         .padding(.vertical, 6)
                         .background(Color.black.opacity(0.7))
                         .cornerRadius(8)
+                    }
+                    
+                    // Settings Button
+                    Button(action: {
+                        showSettings = true
+                    }) {
+                        Image(systemName: "gearshape.fill")
+                            .font(.title3)
+                            .foregroundColor(.white)
+                            .padding(8)
+                            .background(Color.black.opacity(0.7))
+                            .clipShape(Circle())
                     }
                 }
                 .padding()
@@ -172,6 +185,9 @@ struct PreviewView: View {
         }
         .sheet(isPresented: $viewModel.showDiagnostics) {
             DiagnosticsView(viewModel: viewModel)
+        }
+        .sheet(isPresented: $showSettings) {
+            SettingsView(viewModel: viewModel)
         }
     }
 }

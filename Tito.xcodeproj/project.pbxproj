@@ -30,6 +30,8 @@
 		75F19411AA20472BA8A76845 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEEBF26C15B458B98141C59 /* LiveView.swift */; };
 		95B4B0CFC8D6427D87EEB018 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3306A4164B429BAB370A2F /* OnboardingView.swift */; };
 		0976E0904C674BED9483E2E8 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBCF2DB87B4E339683FE31 /* PreviewView.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* StreamDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6A7B8C9D0E1F2A3 /* StreamDestination.swift */; };
+		C3D4E5F6A7B8C9D0E1F2A3B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6A7B8C9D0E1F2A3B4C5 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		ECEEBF26C15B458B98141C59 /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LiveView.swift"; sourceTree = "<group>"; };
 		AB3306A4164B429BAB370A2F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingView.swift"; sourceTree = "<group>"; };
 		EECBCF2DB87B4E339683FE31 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewView.swift"; sourceTree = "<group>"; };
+		B2C3D4E5F6A7B8C9D0E1F2A3 /* StreamDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreamDestination.swift"; sourceTree = "<group>"; };
+		D4E5F6A7B8C9D0E1F2A3B4C5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 				8EC3B62B141B4531BE78C345 /* StreamConfig.swift */,
 				283270A9137C4D9EBFB7B38B /* StreamState.swift */,
 				8736500D174349398F15B1D2 /* Telemetry.swift */,
+				B2C3D4E5F6A7B8C9D0E1F2A3 /* StreamDestination.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				ECEEBF26C15B458B98141C59 /* LiveView.swift */,
 				AB3306A4164B429BAB370A2F /* OnboardingView.swift */,
 				EECBCF2DB87B4E339683FE31 /* PreviewView.swift */,
+				D4E5F6A7B8C9D0E1F2A3B4C5 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,6 +273,8 @@
 				75F19411AA20472BA8A76845 /* LiveView.swift in Sources */,
 				95B4B0CFC8D6427D87EEB018 /* OnboardingView.swift in Sources */,
 				0976E0904C674BED9483E2E8 /* PreviewView.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* StreamDestination.swift in Sources */,
+				C3D4E5F6A7B8C9D0E1F2A3B4 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

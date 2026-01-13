@@ -7,6 +7,7 @@ class KeychainService {
     private let service = "com.tito.app"
     private let serverURLKey = "restream_server_url"
     private let streamKeyKey = "restream_stream_key"
+    private let destinationKey = "stream_destination"
     
     private init() {}
     
@@ -15,11 +16,30 @@ class KeychainService {
         try save(streamKeyKey, value: config.streamKey)
     }
     
+    func saveDestination(_ destination: StreamDestination) {
+        if let data = destination.rawValue.data(using: .utf8) {
+            let query: [String: Any] = [
+                kSecClass as String: kSecClassGenericPassword,
+                kSecAttrService as String: service,
+                kSecAttrAccount as String: destinationKey,
+                kSecValueData as String: data
+            ]
+            SecItemDelete(query as CFDictionary)
+            SecItemAdd(query as CFDictionary, nil)
+        }
+    }
+    
+    func loadDestination() -> StreamDestination {
+        if let data = load(destinationKey),
+           let destination = StreamDestination(rawValue: data) {
+            return destination
+        }
+        return .restream // Default
+    }
+    
     func loadStreamConfig() -> StreamConfig? {
-        // Credenciales hardcodeadas para uso personal
-        let serverURL = "rtmp://dallas.restream.io/live"
-        let streamKey = "re_1922482_event610164eb199c42ebaae2ca64bb3e3e3c"
-        return StreamConfig(serverURL: serverURL, streamKey: streamKey)
+        let destination = loadDestination()
+        return StreamConfig(serverURL: destination.serverURL, streamKey: destination.streamKey)
     }
     
     func deleteStreamConfig() {

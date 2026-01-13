@@ -33,9 +33,9 @@ struct LiveView: View {
                     
                     // Active Platforms Indicator
                     HStack(spacing: 6) {
-                        Image(systemName: "play.rectangle.on.rectangle.fill")
+                        Image(systemName: KeychainService.shared.loadDestination().icon)
                             .font(.caption)
-                        Text("Restream")
+                        Text(KeychainService.shared.loadDestination().displayName)
                             .font(.caption)
                             .fontWeight(.medium)
                     }
